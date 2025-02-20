@@ -1,11 +1,11 @@
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 import WrapperSection from "@/components/wrapper-sectionX";
-import CaseStudyStrip from "@/components/caseStudyStrip";
 import ReviewStrip from "@/components/reviewStrip";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import CaseStudy from "@/components/caseStudy";
+import LaptopMockup from '/public/laptop-mockup.webp';
 
 export default function PripadovkyPage(){
     return(
@@ -19,19 +19,19 @@ export default function PripadovkyPage(){
                 />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pb-28">
                     <div>
-                        <CaseStudy/>
+                        <CaseStudy image={LaptopMockup}/>
                         <button className="button button-secondary mt-6">Více o projektu</button>
                     </div>
                     <div>
-                        <CaseStudy/>
+                        <CaseStudy image={LaptopMockup}/>
                         <button className="button button-secondary mt-6">Více o projektu</button>
                     </div>
                     <div>
-                        <CaseStudy/>
+                        <CaseStudy image={LaptopMockup}/>
                         <button className="button button-secondary mt-6">Více o projektu</button>
                     </div>
                     <div>
-                        <CaseStudy/>
+                        <CaseStudy image={LaptopMockup}/>
                         <button className="button button-secondary mt-6">Více o projektu</button>
                     </div>
                 </div>

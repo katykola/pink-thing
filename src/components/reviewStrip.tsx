@@ -1,5 +1,3 @@
-import ArrowLeft from '../icons/arrow-left';
-import ArrowRight from '@/icons/arrow-right';
 import Review from '@/components/review';
 import WrapperSectionX from './wrapper-sectionX';
 

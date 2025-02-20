@@ -1,7 +1,5 @@
 import Tile from './tile';
 import WebIcon from '../icons/web';
-import WrapperSectionX from './wrapper-sectionX';
-
 
 export default function TileStrip() {
     return (    
