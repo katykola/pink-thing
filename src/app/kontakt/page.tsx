@@ -4,6 +4,8 @@ import Navbar from "@/components/navbar";
 export default function KontaktPage() {
     return(
         <>
+        <div style={{backgroundImage: "url('/keyboard.webp')", backgroundSize: "cover" }}>
+        <div className='bg-slate-950 bg-opacity-70 min-h-svh flex flex-col'>
         <Navbar />
         <div className="flex-1 flex justify-center items-center">
             <div className="w-full flex flex-col gap-7 lg:w-2/3 text-center lg:text-left">
@@ -25,7 +27,8 @@ export default function KontaktPage() {
             </div>
         </div>
         <Footer />
-
+        </div>
+        </div>
         </>
     )
 }

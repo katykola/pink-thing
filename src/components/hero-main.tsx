@@ -13,10 +13,10 @@ export default function HeroMain() {
         </p>
         <div className="flex gap-5">
           <button className='button button-primary'>
-            <a href='/kontakt'>Prohlédnout služby</a>
+            <a href='/sluzby'>Prohlédnout služby</a>
           </button>
           <button className='button button-secondary'>
-            <a href='/pripadove-studie'>Případovky</a>
+            <a href='/pripadovky'>Případovky</a>
           </button>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function Home() {
     <>
 
     <div style={{backgroundImage: "url('/jelly3.webp')", backgroundSize: "cover"}}>
-      <div className='bg-slate-950 bg-opacity-50'>
+      <div className='bg-slate-950 bg-opacity-50 md:pb-12'>
         <Navbar />
         <HeroMain />
         <WrapperSection>
@@ -28,7 +28,7 @@ export default function Home() {
     <ReviewStrip />
 
     <div style={{backgroundImage: "url('/switch4.webp')", backgroundSize: "cover",  backgroundPositionY: "bottom", backgroundPositionX: "50%" }}>
-      <div className='bg-slate-950 bg-opacity-30'>
+      <div className='bg-slate-950 bg-opacity-60'>
         <WrapperSection>
             <h3 className='mt-20 mb-8'>Vybrané projekty</h3>
             <CaseStudyStrip />

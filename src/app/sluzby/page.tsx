@@ -14,7 +14,7 @@ export default function SluzbyPage(){
     return(
         <div>
             <div style={{backgroundImage: "url('/jelly-pink.webp')", backgroundSize: "cover", backgroundPositionY: "-500px center", backgroundPositionX: "center" }}>
-                <div className='bg-slate-950 bg-opacity-50'>
+                <div className='bg-slate-950 bg-opacity-70'>
                     <Navbar />
 
                     <WrapperSection>
@@ -62,7 +62,7 @@ export default function SluzbyPage(){
                             <TileNumber number={'04'}/>
                             <TileNumber number={'05'}/>
                         </div>
-                        <h2 className='pt-28 pb-12'>Časté dotazy</h2>
+                        <h2 className='pt-28 md:pt-4040 pb-12'>Časté dotazy</h2>
                         <Accordion/>
                     
                     </WrapperSection>
