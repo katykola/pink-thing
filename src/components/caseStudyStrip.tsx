@@ -1,5 +1,5 @@
 import CaseStudy from '@/components/caseStudy';
-import LaptopMockup from '/public/images/laptop-mockup.webp';
+import LaptopMockup from '/public/laptop-mockup.webp';
 
 export default function CaseStudyStrip() {
     return(
