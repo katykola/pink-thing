@@ -29,7 +29,7 @@ export default function Navbar() {
 
           {/* Navigation Menu */}
           <nav
-            className={`${isOpen ? "block" : "hidden"} absolute md:block md:static top-0 left-0 w-full md:w-auto p-4 md:p-0 z-50 md:z-auto h-screen md:h-auto bg-primary md:bg-transparent`}>
+            className={`${isOpen ? "block" : "hidden"} absolute md:block md:static top-0 left-0 w-full md:w-auto p-4 md:p-0 z-50 md:z-auto h-screen md:h-auto bg-primaryDark md:bg-transparent`}>
           <div className="flex flex-col md:block h-full md:h-auto">
             <div className="flex justify-end">
               <button
@@ -40,7 +40,7 @@ export default function Navbar() {
                 x
               </button>
             </div>
-            <ul className=" flex-1 flex flex-col items-center justify-center md:flex-row gap-16 md:gap-6">
+            <ul className=" flex-1 flex flex-col items-center justify-start mt-12 md:mt-0 md:flex-row gap-12 md:gap-6">
                 <li className="menu-item">
                   <Link href="/">Home</Link>
                 </li>

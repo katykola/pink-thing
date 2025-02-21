@@ -7,7 +7,7 @@ export default function ReviewStrip() {
         <WrapperSectionX>
         <div className='max-w-main grid md:grid-cols-2 items-center gap-28'>
             <Review />
-            <Review />
+            <div className='hidden md:block'><Review/></div>
         </div>
         </WrapperSectionX>
     </div>

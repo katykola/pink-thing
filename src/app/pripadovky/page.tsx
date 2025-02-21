@@ -18,29 +18,19 @@ export default function PripadovkyPage(){
                     title={"Vybrané projekty"}
                     content={"Podívejte se na weby, které jsme vytvořili. Každý z nich je výsledkem pečlivé práce, zaměřené na to, aby skutečně vyhovovaly potřebám našich klientů."}
                 />
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pb-28">
-                    <div>
-                        <CaseStudy image={LaptopMockup}/>
-                        <button className="button button-secondary mt-6">Více o projektu</button>
-                    </div>
-                    <div>
-                        <CaseStudy image={LaptopMockup}/>
-                        <button className="button button-secondary mt-6">Více o projektu</button>
-                    </div>
-                    <div>
-                        <CaseStudy image={LaptopMockup}/>
-                        <button className="button button-secondary mt-6">Více o projektu</button>
-                    </div>
-                    <div>
-                        <CaseStudy image={LaptopMockup}/>
-                        <button className="button button-secondary mt-6">Více o projektu</button>
-                    </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-28">
+                    <CaseStudy image={LaptopMockup}/>
+                    <CaseStudy image={LaptopMockup}/>
+                    <CaseStudy image={LaptopMockup}/>
+                    <CaseStudy image={LaptopMockup}/>
                 </div>
+
             </WrapperSection>
         </div>
         <ReviewStrip/>
         <div style={{backgroundImage: "url('/switch4.webp')", backgroundSize: "cover",  backgroundPositionY: "bottom", backgroundPositionX: "50%" }}>
-            <div className="bg-black bg-opacity-60">
+            <div className="bg-black bg-opacity-60 pt-8">
                 <Contact/>
                 <Footer/>
             </div>

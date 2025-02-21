@@ -10,6 +10,7 @@ export default {
     extend: {
       colors: {
         primary: "var(--primary)",
+        accent: "var(--accent)",
         primaryDark: "var(--primary-dark)",
         dark: "var(--dark)",
       },

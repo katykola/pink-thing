@@ -6,8 +6,9 @@
 
 :root {
   --primary: #e83f99;
-  --primary-dark: #b9337a;
-  --dark: #26283F;
+  --accent: #06D6A0;
+  --primary-dark: #ab3172;
+  --dark: #1E1E1E;
 }
 
 body {
@@ -19,27 +20,35 @@ body {
 }
 
 p{
-  @apply text-base font-light opacity-80;
+  @apply text-base font-light opacity-90;
 }
 
 h1{
-  @apply text-[6rem] md:text-[8rem] leading-[6rem] md:leading-[7rem] text-primary font-bebas;
+  @apply text-[4rem] md:text-[8rem] leading-[4rem] md:leading-[7rem] text-accent font-bebas opacity-100;
 }
 
 h2{
-  @apply text-[2.5rem] font-bold md:text-5xl;
+  @apply text-[2.5rem] font-bold md:text-4xl;
+}
+h2::after{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: var(--accent);
+  margin-top: 10px;
 }
 
 h3{
-  @apply text-[4rem] md:text-[5rem] font-bebas text-primary;
-}
-
-h4{
   @apply text-2xl font-bold;
 }
 
+h4{
+  @apply text-xl font-bold;
+}
+
 .link{
-  @apply font-extrabold text-lg;
+  @apply font-extrabold text-lg decoration-double;
 }
 
 .logo{
@@ -47,11 +56,11 @@ h4{
 }
 
 .menu-item{
-  @apply font-bold text-4xl md:text-base;
+  @apply font-bold text-2xl md:text-base;
 }
 
 .tile-number{
-  @apply text-[3.5rem] font-bold font-DMsans text-primary opacity-100 leading-[4rem];
+  @apply text-3xl md:text-[3rem] font-bold font-DMsans text-white opacity-100 md:leading-[3rem];
 }
 
 .tile-title{
@@ -59,7 +68,7 @@ h4{
 }
 
 label{
-  @apply font-bold;
+  @apply text-sm md:text-base font-bold;
 }
 
 input {
@@ -79,7 +88,7 @@ textarea:focus, textarea:active {
 }
 
 button{
-  @apply text-lg font-bold py-4 px-6 rounded-[30px]; 
+  @apply md:text-lg font-bold py-3 px-4 md:py-4 md:px-6 rounded-[30px]; 
 }
 
 .button-primary{
@@ -91,6 +100,7 @@ button{
 }
 
 .button-secondary:hover{
-  background-color: rgba(0, 0, 0, 0.2);
+  @apply border-primaryDark text-primaryDark;
+  background-color: rgba(0, 0, 0, 0.3);
 }
  
