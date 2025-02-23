@@ -15,7 +15,7 @@ export default function PripadovkyPage(){
             <Navbar/>
             <WrapperSection>
                 <Hero
-                    title={"Vybrané projekty"}
+                    title={"Vybrané reference"}
                     content={"Podívejte se na weby, které jsme vytvořili. Každý z nich je výsledkem pečlivé práce, zaměřené na to, aby skutečně vyhovovaly potřebám našich klientů."}
                 />
 

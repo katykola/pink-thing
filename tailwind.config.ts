@@ -16,7 +16,7 @@ export default {
       },
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],
-        bebas: ['Bebas Neue', 'cursive'],
+        bebas: ['Bebas Neue', 'Oswald', 'Impact', 'sans-serif'],
         DMsans: ['DM Sans', 'sans-serif'],
       },
       maxWidth: {

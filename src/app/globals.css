@@ -1,8 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/fonts/BebasNeue-Regular.woff2') format('woff2'),
+       url('/fonts/BebasNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --primary: #e83f99;
@@ -13,7 +22,7 @@
 
 body {
   color: white;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
   @apply bg-slate-950;
@@ -24,7 +33,7 @@ p{
 }
 
 h1{
-  @apply text-[4rem] md:text-[8rem] leading-[4rem] md:leading-[7rem] text-accent font-bebas opacity-100;
+  @apply text-[4rem] md:text-[8rem] leading-[4rem] md:leading-[7rem] font-bebas text-accent opacity-100;
 }
 
 h2{
@@ -92,15 +101,18 @@ button{
 }
 
 .button-primary{
-  @apply text-white bg-primary hover:bg-primaryDark; 
+  @apply text-white bg-primary hover:shadow-xl; 
 }
 
 .button-secondary{
-  @apply text-primary border-primary border-2; 
+  @apply text-primary bg-white border-2; 
 }
 
-.button-secondary:hover{
-  @apply border-primaryDark text-primaryDark;
-  background-color: rgba(0, 0, 0, 0.3);
+.button-primary:hover,
+.button-primary:focus,
+.button-primary:active,
+.button-secondary:hover,
+.button-secondary:focus,
+.button-secondary:active {
+  box-shadow: 0 0 5px rgba(232, 63, 153, 0.5), 0 0 10px rgba(232, 63, 153, 0.5), 0 0 15px rgba(232, 63, 153, 0.5), 0 0 20px rgba(232, 63, 153, 0.5), 0 0 25px rgba(232, 63, 153, 0.5), 0 0 30px rgba(232, 63, 153, 0.5), 0 0 35px rgba(232, 63, 153, 0.5);
 }
- 

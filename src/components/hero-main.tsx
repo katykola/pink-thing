@@ -4,7 +4,7 @@ export default function HeroMain() {
     return(
       <WrapperSectionX>
         <div className="flex flex-col gap-4 md:gap-7 pt-8 md:pt-28 pb-12 md:pb-28">
-        <h1>Weby, které pracují pro vás</h1>
+        <h1>WEBY, KTERÉ PRACUJÍ PRO VÁS</h1>
         <p className="text-2xl md:text-4xl font-[600] md:font-bold md:w-2/3 pb-4 opacity-100">
         Jsme studio zaměřené na tvorbu moderních webů, podnikových systémů a IT řešení na míru.
         </p>

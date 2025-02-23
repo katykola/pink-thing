@@ -1,13 +1,19 @@
 'use client';
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import WrapperSection from "./wrapper-sectionX";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const isActive = (path: string) => {
+    return pathname === path ? "text-primary" : ""; // Optional chaining just in case
   };
 
   return (
@@ -41,16 +47,16 @@ export default function Navbar() {
               </button>
             </div>
             <ul className=" flex-1 flex flex-col items-center justify-start mt-12 md:mt-0 md:flex-row gap-12 md:gap-6">
-                <li className="menu-item">
-                  <Link href="/">Home</Link>
+            <li className={`menu-item ${isActive("/")}`}>
+            <Link href="/">Home</Link>
                 </li>
-                <li className="menu-item">
+                <li className={`menu-item ${isActive("/sluzby")}`}>
                   <Link href="/sluzby">Služby</Link>
                 </li>
-                <li className="menu-item">
-                  <Link href="/pripadovky">Případovky</Link>
+                <li className={`menu-item ${isActive("/reference")}`}>
+                  <Link href="/reference">Reference</Link>
                 </li>
-                <li className="menu-item">
+                <li className={`menu-item ${isActive("/o-nas")}`}>
                   <Link href="/o-nas">O nás</Link>
                 </li>
 

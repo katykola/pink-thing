@@ -6,7 +6,6 @@ import ReviewStrip from '@/components/reviewStrip';
 import Contact from '@/components/contact';
 import Footer from '@/components/footer';
 import Accordion from '@/components/accordion';
-import CaseStudyStrip from '@/components/caseStudyStrip';
 
 export default function SluzbyPage(){
     return(
@@ -59,7 +58,7 @@ export default function SluzbyPage(){
                     </WrapperSection>
                 </div>
                     
-                    <div className='pt-12 md:pt-28'>
+                    <div className='pt-12 md:pt-28 pb-12 md:pb-20'>
                         <WrapperSection>
                             <h2 className='pb-12'>Časté dotazy</h2>
                             <Accordion/>
@@ -67,12 +66,12 @@ export default function SluzbyPage(){
                         </WrapperSection>
                     </div>
 
-                <div className='pt-28 pb-16'>
+                {/* <div className='pt-28 pb-16'>
                     <WrapperSection>
                         <h2 className='text-left pt:0 mt:0 md:pt-20 mb-12'>Vybrané projekty</h2>
                         <CaseStudyStrip/>
                     </WrapperSection>
-                </div>
+                </div> */}
                 
                 <Contact/>
                 <Footer/>
