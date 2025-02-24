@@ -37,7 +37,7 @@ export async function sendMail({
     return;
   }
   const info = await transporter.sendMail({
-    from: email, 
+    from: email,
     to: sendTo || SITE_MAIL_RECIEVER,
     subject: subject,
     text: text,
