@@ -31,13 +31,13 @@ export async function sendMail({
   html?: string;
 }) {
   try {
-    const isVerified = await transporter.verify();
+    await transporter.verify();
   } catch (error) {
     console.error('Something Went Wrong', SMTP_SERVER_USERNAME, SMTP_SERVER_PASSWORD, error);
     return;
   }
   const info = await transporter.sendMail({
-    from: email,
+    from: email, 
     to: sendTo || SITE_MAIL_RECIEVER,
     subject: subject,
     text: text,
