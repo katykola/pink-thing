@@ -13,7 +13,7 @@ export default function HeroMain() {
         </p>
         <div className="flex gap-2 md:gap-5 pt-8">
           <button className='button button-primary max-w-fit'>
-            <a href='/sluzby'>Prohlédnot služby</a>
+            <a href='/sluzby'>Prohlédnout služby</a>
           </button>
           <button className='button button-secondary max-w-fit'>
             <a href='/pripadovky'>Případovky</a>

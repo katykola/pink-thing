@@ -15,14 +15,12 @@ export default function Home() {
 
     <>
 
-    <div className="md:bg-[url('/jelly2.webp')] bg-top bg-cover">
-      <div className='bg-slate-950 bg-opacity-50 pb-12'>
+    <div className="xl:bg-[url('/jelly2.webp')] bg-top bg-cover">
         <Navbar />
         <HeroMain />
         <WrapperSection>
           <TileStrip />
         </WrapperSection>
-      </div>
     </div>
 
     <ReviewStrip />
