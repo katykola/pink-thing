@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import ArrowLink from '@/icons/arrow-link.svg';
-import Link from 'next/link';
 import HeroMain from '@/components/hero-main';
 import TileStrip from '@/components/tileStrip';
 import ReviewStrip from '@/components/reviewStrip';
