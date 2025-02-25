@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import WrapperSection from "./wrapper-sectionX";
+import ThemeToggle from "./themeToggle";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,16 +61,18 @@ export default function Navbar() {
                   <Link href="/o-nas">O nás</Link>
                 </li>
 
-                <button className="button button-primary hidden md:block">
-                  <Link
-                    href="/kontakt"
-                  >
+                <Link href="/kontakt">
+                  <button className="button button-primary hidden md:block">
                     Kontakt
-                  </Link>
-                </button>
+                  </button>
+                </Link>
 
                 <li className="menu-item md:hidden">
                 <Link href="/kontakt">Kontakt</Link>
+                </li>
+
+                <li>
+                  <ThemeToggle />
                 </li>
 
               </ul>

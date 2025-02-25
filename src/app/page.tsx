@@ -15,7 +15,7 @@ export default function Home() {
 
     <>
 
-    <div className="xl:bg-[url('/jelly2.webp')] bg-top bg-cover">
+    <div className="dark:xl:bg-[url('/jelly2.webp')] bg-top bg-cover pb-20">
         <Navbar />
         <HeroMain />
         <WrapperSection>
@@ -25,10 +25,13 @@ export default function Home() {
 
     <ReviewStrip />
 
-    <div style={{backgroundImage: "url('/switch4.webp')", backgroundSize: "cover",  backgroundPositionY: "bottom", backgroundPositionX: "50%" }}>
-      <div className='bg-slate-950 bg-opacity-60'>
+    <div 
+    className="dark:md:bg-[url('/switch4.webp')] bg-cover" 
+    style={{backgroundPositionY: "bottom", backgroundPositionX: "50%" }}
+    >
+      <div className='dark:bg-slate-950 dark:bg-opacity-60'>
         <WrapperSection>
-            <h2 className='mt-20 mb-8'>Vybrané projekty</h2>
+            <h2 className='mt:20 lg:mt-28 mb-8'>Vybrané projekty</h2>
             <CaseStudyStrip />
             <div className='flex justify-end mt-8'>
               <div className='flex gap-2 md:mt-8'>

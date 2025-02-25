@@ -10,8 +10,11 @@ import Accordion from '@/components/accordion';
 export default function SluzbyPage(){
     return(
         <div>
-            <div style={{backgroundImage: "url('/jelly-pink.webp')", backgroundSize: "cover", backgroundPositionY: "-500px center", backgroundPositionX: "center" }}>
-                <div className='bg-slate-950 bg-opacity-70'>
+            <div 
+                className="dark:xl:bg-[url('/jelly-pink.webp')] bg-cover"            
+                style={{backgroundPositionY: "-500px center", backgroundPositionX: "center" }}
+            >
+                <div className='dark:bg-slate-950 dark:bg-opacity-70'>
                     <Navbar />
 
                     <WrapperSection>
@@ -39,8 +42,8 @@ export default function SluzbyPage(){
 
             <ReviewStrip/>
 
-            <div style={{backgroundImage: "url('/jelly-dark2.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundPositionX: 'right' }}>
-            <div className='bg-slate-950 bg-opacity-70'>
+            <div className="dark:md:bg-[url('/jelly-dark2.webp')] bg-cover bg-right" >
+            <div className='dark:bg-slate-950 dark:bg-opacity-70'>
 
                 <div className='pt-20 md:pt-28 '>
                     <WrapperSection>
@@ -65,13 +68,6 @@ export default function SluzbyPage(){
                         
                         </WrapperSection>
                     </div>
-
-                {/* <div className='pt-28 pb-16'>
-                    <WrapperSection>
-                        <h2 className='text-left pt:0 mt:0 md:pt-20 mb-12'>Vybrané projekty</h2>
-                        <CaseStudyStrip/>
-                    </WrapperSection>
-                </div> */}
                 
                 <Contact/>
                 <Footer/>

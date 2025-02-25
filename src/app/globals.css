@@ -16,16 +16,27 @@
 :root {
   --primary: #e83f99;
   --accent: #06D6A0;
-  --primary-dark: #ab3172;
+  --primary-dark: #be367e;
   --dark: #1E1E1E;
 }
 
 body {
-  color: white;
   font-family: 'DM Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  @apply bg-slate-950;
+  @apply bg-white text-black;
+}
+
+html.dark body {
+  @apply bg-slate-950 text-white;
+}
+
+.no-select {
+  @apply select-none;
+}
+
+::selection{
+  @apply bg-accent;
 }
 
 p{
@@ -33,7 +44,7 @@ p{
 }
 
 h1{
-  @apply text-[4rem] md:text-[8rem] leading-[4rem] md:leading-[7rem] font-bebas text-accent opacity-100;
+  @apply text-[4rem] md:text-[8rem] leading-[4rem] md:leading-[7rem] font-bebas text-accent opacity-100 no-select;
 }
 
 h2{
@@ -61,7 +72,7 @@ h4{
 }
 
 .logo{
-  @apply text-3xl font-extrabold md:text-4xl font-nunito text-primary opacity-100;
+  @apply text-3xl font-extrabold md:text-4xl font-nunito text-primary opacity-100 no-select;
 }
 
 .menu-item{
@@ -69,7 +80,7 @@ h4{
 }
 
 .tile-number{
-  @apply text-3xl md:text-[3rem] font-bold font-DMsans text-white opacity-100 md:leading-[3rem];
+  @apply text-3xl md:text-[3rem] font-bold font-DMsans dark:text-white opacity-100 md:leading-[3rem];
 }
 
 .tile-title{
@@ -81,7 +92,7 @@ label{
 }
 
 input {
-  @apply w-full py-4 px-6 rounded-[30px] border-2 border-white;
+  @apply w-full py-4 px-6 rounded-[30px] border border-slate-500 dark:border-white;
 }
 
 input:focus, input:active {
@@ -89,7 +100,7 @@ input:focus, input:active {
 }
 
 textarea{
-  @apply w-full py-4 px-6 rounded-[30px] border-2 border-white;
+  @apply w-full py-4 px-6 rounded-[30px] border border-slate-500 dark:border-white;
 }
 
 textarea:focus, textarea:active {
@@ -101,18 +112,30 @@ button{
 }
 
 .button-primary{
-  @apply text-white bg-primary hover:shadow-xl; 
+  @apply text-white bg-primary; 
 }
 
 .button-secondary{
-  @apply text-primary bg-white border-2; 
+  @apply text-primary bg-white border-2 dark:border-white; 
 }
 
 .button-primary:hover,
 .button-primary:focus,
-.button-primary:active,
+.button-primary:active {
+  @apply bg-primaryDark shadow-xl;
+}
+
 .button-secondary:hover,
 .button-secondary:focus,
 .button-secondary:active {
+  @apply border-primary shadow-xl;
+}
+
+.dark .button-primary:hover,
+.dark .button-primary:focus,
+.dark .button-primary:active,
+.dark .button-secondary:hover,
+.dark .button-secondary:focus,
+.dark .button-secondary:active {
   box-shadow: 0 0 5px rgba(232, 63, 153, 0.5), 0 0 10px rgba(232, 63, 153, 0.5), 0 0 15px rgba(232, 63, 153, 0.5), 0 0 20px rgba(232, 63, 153, 0.5), 0 0 25px rgba(232, 63, 153, 0.5), 0 0 30px rgba(232, 63, 153, 0.5), 0 0 35px rgba(232, 63, 153, 0.5);
 }

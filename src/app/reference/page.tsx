@@ -10,8 +10,8 @@ import LaptopMockup from '/public/laptop-mockup.webp';
 export default function PripadovkyPage(){
     return(
         <>
-        <div style={{backgroundImage: "url('/jellies.jpg')", backgroundSize: "cover", backgroundPosition: "bottom" }}>
-        <div className='bg-slate-950 bg-opacity-80'>
+        <div className="dark:xl:bg-[url('/jellies.webp')] bg-bottom bg-cover">
+        <div className='dark:bg-slate-950 dark:bg-opacity-80'>
             <Navbar/>
             <WrapperSection>
                 <Hero
@@ -29,12 +29,15 @@ export default function PripadovkyPage(){
             </WrapperSection>
         </div>
         <ReviewStrip/>
-        <div style={{backgroundImage: "url('/switch4.webp')", backgroundSize: "cover",  backgroundPositionY: "bottom", backgroundPositionX: "50%" }}>
-            <div className="bg-black bg-opacity-60 pt-8">
+        <div 
+            className="dark:md:bg-[url('/switch4.webp')] bg-cover" 
+            style={{backgroundPositionY: "bottom", backgroundPositionX: "50%" }}
+        >
+            <div className="dark:bg-black dark:bg-opacity-60 pt-8">
                 <Contact/>
                 <Footer/>
             </div>
-            </div>
+        </div>
         </div>
         </>
     )
