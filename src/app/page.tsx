@@ -34,10 +34,6 @@ export default function Home() {
             <h2 className='mt:20 lg:mt-28 mb-8'>Vybrané projekty</h2>
             <CaseStudyStrip />
             <div className='flex justify-end mt-8'>
-              <div className='flex gap-2 md:mt-8'>
-                <Link className='link' href="/">Všechny realizované projekty</Link>
-                <Image src={ArrowLink} alt='arrow link'/>
-              </div>
             </div>
           </WrapperSection>
           <Contact />

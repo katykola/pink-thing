@@ -14,6 +14,7 @@ export default {
         accent: "var(--accent)",
         primaryDark: "var(--primary-dark)",
         dark: "var(--dark)",
+        light: "var(--light)",
       },
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],
